@@ -39,7 +39,7 @@ document.getElementById("button5").onclick = function() {
 const buttons = document.querySelectorAll('.button');
       buttons.forEach(button => {
         button.addEventListener('click', () => {
-            fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96ecd3f33dcc527de032893cda86702c`)
+            fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96ecd3f33dcc527de032893cda86702c`)
             .then(function (resp){ return resp.json() })
             .then(function (data) {
                 console.log(data);
@@ -53,7 +53,7 @@ const buttons = document.querySelectorAll('.button');
       });
 
 
-
+      
 
 // fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96ecd3f33dcc527de032893cda86702c`)
 //     .then(function (resp){ return resp.json() })
