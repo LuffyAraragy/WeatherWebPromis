@@ -42,12 +42,12 @@ const buttons = document.querySelectorAll('.button');
             fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96ecd3f33dcc527de032893cda86702c`)
             .then(function (resp){ return resp.json() })
             .then(function (data) {
-                //console.log(data);
+                console.log(data);
                 document.querySelector('.wind').innerHTML = data.wind.speed;
                 document.querySelector('.temperature').innerHTML = Math.round(data.main.temp - 273);
             })
             .catch(function () {
-        
+                console.error("Ошибка");
             });
         });
       });
