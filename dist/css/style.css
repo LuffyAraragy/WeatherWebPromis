@@ -44,6 +44,16 @@
   justify-content: center;
 }
 
+.text-information {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  border-width: 1;
+  border-color: rgb(0, 124, 108);
+  border-style: solid;
+}
+
 .weather {
   width: 300px;
   height: 500px;
