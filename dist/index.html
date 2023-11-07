@@ -7,51 +7,74 @@
     <link rel="stylesheet" href="css/style.min.css"/>
     <title>Главная</title>
 </head>
- <body>
+   <body>
       <main class="main-blocks">
-  
-         <div class="header" id="button-container">
-    <button class="button">
-        London
-    </button>
-    <button class="button">
-        Moscow
-    </button>
-    <button class="button">
-        Berlin
-    </button>
-    <button class="button">
-        Beijing
-    </button>
-    <button class="button">
-        Shanghai
-    </button>
-    <!-- <input type="text"> -->
-    <input type="text" id="text-input" name = "message" value="">
-    <button class="input-button">
-        Подтвердите свой выбор
-    </button>
-    <div class="text-information">
-        
+
+         <div class="header" src="../img/2.jpg">
+    <div id="button-container">
+        <button class="button">
+            London
+        </button>
+        <button class="button">
+            Moscow
+        </button>
+        <button class="button">
+            Berlin
+        </button>
+        <button class="button">
+            Beijing
+        </button>
+        <button class="button">
+            Shanghai
+        </button>
     </div>
+    
+    <div class="input-container">
+        <!-- <input type="text"> -->
+        <div class="text">
+            Введите город, погоду которого хотите увидеть
+        </div>
+        <input type="text" id="text-input" name = "message" value="" placeholder="Введите город">
+        <button class="input-button">
+            Подтвердите свой выбор
+        </button>
+        <div class="text-information">
+            
+        </div>
+    </div>
+    <div class="text">
+        Город который вы увидите
+    </div>
+    
+    <!-- Интеграция teilwind В проект -->
+    <!-- <div class="text-3xl font-bold underline">
+        Hello world!
+    </div> -->
+    
 </div>
+
+
          <div class="weather">
-    <div class="temperature-name">
-        Температура
-    </div>
-    <div class="temperature">
-        Температура
-    </div>
-    <div class="wind-name">
-        Ветер
-    </div>
-    <div class="wind">
-        Ветер
+    <div class="all-content">
+        <div class="temperature-name size-block">
+            Температура
+        </div>
+        <div class="temperature size-block">
+            Температура
+        </div>
+        <div class="wind-name size-block">
+            Ветер
+        </div>
+        <div class="wind size-block">
+            Ветер
+        </div>
     </div>
 </div>
 
-      
       </main>
-    <script src = "js/app.min.js"></script>
- </body>
+      
+      <script src = "js/app.min.js"></script>
+      <script src = "https://cdn.tailwindcss.com"></script>
+      
+   </body>
 </html>
